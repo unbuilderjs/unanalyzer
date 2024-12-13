@@ -3,7 +3,8 @@
     "antfu",
     "bumpp",
     "Naily",
-    "tsup"
+    "tsup",
+    "unbuilderjs"
   ],
 
   "files.associations": {

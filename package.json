@@ -7,6 +7,15 @@
   "publishConfig": {
     "access": "public"
   },
+  "homepage": "https://github.com/unbuilderjs/unanalyzer",
+  "repository": {
+    "type": "git",
+    "url": "git+github.com:unbuilderjs/unanalyzer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/unbuilderjs/unanalyzer/issues",
+    "email": "zero@naily.cc"
+  },
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
