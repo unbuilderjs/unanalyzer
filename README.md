@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="windmill.svg" width="100" height="100">
+<img src="https://github.com/unbuilderjs/unanalyzer/blob/v1/windmill.svg?raw=true" width="100" height="100">
 
 # unanalyzer
 
