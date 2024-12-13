@@ -1,5 +1,11 @@
 # unanalyzer
 
+## 1.0.2
+
+### Patch Changes
+
+- 9ebca56: feat: update readme
+
 ## 1.0.1
 
 ### Patch Changes
