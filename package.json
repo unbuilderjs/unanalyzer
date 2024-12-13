@@ -2,7 +2,7 @@
   "name": "unanalyzer",
   "type": "module",
   "version": "0.0.1",
-  "description": "The analyzer for unbuilder.",
+  "description": "Utilities for analyzing project and generating builder entries, outputs, externals and aliases.",
   "author": "Naily Zero <zero@naily.cc> (https://naily.cc)",
   "publishConfig": {
     "access": "public"
