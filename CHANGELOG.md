@@ -1,5 +1,11 @@
 # unanalyzer
 
+## 1.0.3
+
+### Patch Changes
+
+- f8143fe: feat: update package.json
+
 ## 1.0.2
 
 ### Patch Changes
