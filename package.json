@@ -1,0 +1,64 @@
+{
+  "name": "unanalyzer",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "The analyzer for unbuilder.",
+  "author": "Naily Zero <zero@naily.cc> (https://naily.cc)",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    },
+    "./dist/*": "./dist/*"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "prepublishOnly": "npm run build",
+    "lint": "eslint .",
+    "postinstall": "npx simple-git-hooks",
+    "test": "vitest --ui --coverage"
+  },
+  "dependencies": {
+    "@nailyjs/ioc": "^2.0.6",
+    "@types/lodash-es": "^4.17.12",
+    "fast-glob": "^3.3.2",
+    "lodash-es": "^4.17.21",
+    "package-manager-detector": "^0.2.7",
+    "ts-pattern": "^5.5.0",
+    "type-fest": "^4.30.0"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^3.7.3",
+    "@nailyjs/eslint": "^2.0.8",
+    "@swc/core": "^1.10.1",
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^22.7.5",
+    "@vitest/coverage-v8": "2.1.8",
+    "@vitest/ui": "2.1.8",
+    "bumpp": "^9.7.1",
+    "eslint": "^9.12.0",
+    "js-yaml": "^4.1.0",
+    "lint-staged": "^15.2.10",
+    "simple-git-hooks": "^2.11.1",
+    "tsup": "^8.3.5",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.2"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  }
+}
