@@ -27,7 +27,11 @@ export async function searchFilesFromParent(searchingPath: string = cwd(), fileN
 }
 
 export async function getNearestFileFromParent(searchingPath: string = cwd(), fileName: string): Promise<string> {
-  return searchFilesFromParent(searchingPath, fileName).then(files => files[0])
+  const result = await searchFilesFromParent(searchingPath, fileName)
+  const firstFile = result.find(file => path.basename(file) === fileName)
+  if (!firstFile)
+    throw new Error(`File not found: ${fileName}`)
+  return firstFile
 }
 
 export default {

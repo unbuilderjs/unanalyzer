@@ -1,3 +1,4 @@
+import type { UserConfig as ViteConfig } from 'vite'
 import path from 'node:path'
 import { cwd } from 'node:process'
 import { TsConfigJson } from 'type-fest'
@@ -57,6 +58,20 @@ export class AliasAnalyzer {
         tsConfigPath,
         baseURL: (tsconfig.compilerOptions || {}).baseUrl,
         aliasPath: path[0],
+      })
+    }
+
+    return aliasAnalyzer
+  }
+
+  public static fromViteConfig(viteConfig: ViteConfig): AliasAnalyzer {
+    const aliasAnalyzer = new AliasAnalyzer()
+
+    for (const [alias, path] of Object.entries(viteConfig.resolve?.alias || {})) {
+      aliasAnalyzer.addAlias(alias, {
+        tsConfigPath: viteConfig.resolve?.alias || '',
+        baseURL: viteConfig.resolve?.baseUrl,
+        aliasPath: path,
       })
     }
 
