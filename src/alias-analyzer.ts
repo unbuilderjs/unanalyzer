@@ -69,8 +69,8 @@ export class AliasAnalyzer {
 
     for (const [alias, path] of Object.entries(viteConfig.resolve?.alias || {})) {
       aliasAnalyzer.addAlias(alias, {
-        tsConfigPath: viteConfig.resolve?.alias || '',
-        baseURL: viteConfig.resolve?.baseUrl,
+        tsConfigPath: '',
+        baseURL: '',
         aliasPath: path,
       })
     }

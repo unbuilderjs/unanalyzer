@@ -1,0 +1,5 @@
+---
+"unanalyzer": patch
+---
+
+fix: fromViteConfig
