@@ -1,5 +1,11 @@
 # unanalyzer
 
+## 1.0.5
+
+### Patch Changes
+
+- 3167229: fix: fromViteConfig
+
 ## 1.0.4
 
 ### Patch Changes
