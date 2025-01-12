@@ -1,5 +1,11 @@
 # unanalyzer
 
+## 1.0.4
+
+### Patch Changes
+
+- 7fe6660: fix: getNearestFileFromParent cache
+
 ## 1.0.3
 
 ### Patch Changes

@@ -1,7 +1,7 @@
 {
   "name": "unanalyzer",
   "type": "module",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Utilities for analyzing project and generating builder entries, outputs, externals and aliases.",
   "author": "Naily Zero <zero@naily.cc> (https://naily.cc)",
   "publishConfig": {
